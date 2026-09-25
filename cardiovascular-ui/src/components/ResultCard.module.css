@@ -1,0 +1,197 @@
+.card {
+  margin-top: 36px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  overflow: hidden;
+  animation: fadeUp 0.5s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.cardSafe   { border-color: rgba(34,197,94,0.35); }
+.cardDanger { border-color: rgba(230,57,70,0.35); }
+
+/* Header */
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  flex-shrink: 0;
+}
+
+.iconSafe   { background: rgba(34,197,94,0.12);  color: #22c55e; }
+.iconDanger { background: rgba(230,57,70,0.12); color: var(--red); }
+
+.verdict {
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+}
+
+.sub {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Gauge Section */
+.gaugeSection {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 28px 28px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.gauge {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.gaugeSvg {
+  width: 200px;
+  height: 110px;
+  display: block;
+}
+
+.scoreLabel {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.scoreNum {
+  font-family: var(--font-head);
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  display: block;
+}
+.scoreRed   { color: var(--red); }
+.scoreGreen { color: #22c55e; }
+
+.scoreCaption {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  display: block;
+}
+
+/* Bands */
+.bands {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 200px;
+}
+
+.band {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: all 0.2s;
+  opacity: 0.45;
+}
+
+.bandActive {
+  opacity: 1;
+  background: rgba(255,255,255,0.03);
+  border-color: var(--border);
+}
+
+.bandDot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.bandLabel {
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.bandRange {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Tips */
+.tips {
+  padding: 24px 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tipsTitle {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 16px;
+}
+
+.tipsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tipItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.87rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.tipBullet {
+  display: inline-block;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.tipBulletRed   { background: var(--red); }
+.tipBulletGreen { background: #22c55e; }
+
+/* Disclaimer */
+.disclaimer {
+  padding: 14px 28px;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  background: rgba(255,255,255,0.015);
+}

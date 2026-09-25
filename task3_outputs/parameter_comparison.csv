@@ -1,0 +1,8 @@
+Parameter,sklearn,Gradient Descent,Absolute Difference
+Intercept (c / bias),126.420956,126.420956,0.0
+Weight (age),1.276128,1.276128,0.0
+Weight (height),-0.411036,-0.411036,0.0
+Weight (weight),1.237131,1.237131,0.0
+Weight (ap_lo),9.496337,9.496337,0.0
+Weight (cholesterol),0.890153,0.890153,0.0
+Weight (active),0.041708,0.041708,0.0

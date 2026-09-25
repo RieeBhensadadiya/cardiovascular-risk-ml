@@ -1,0 +1,53 @@
+/* ─── Reset & Base ─── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-primary:    #07070f;
+  --bg-card:       #0e0e1c;
+  --bg-card-hover: #131325;
+  --bg-input:      #12121f;
+  --border:        #1e1e35;
+  --border-focus:  #e63946;
+
+  --red:           #e63946;
+  --red-light:     #ff6b77;
+  --red-glow:      rgba(230, 57, 70, 0.25);
+
+  --text-primary:  #f0f0fa;
+  --text-secondary:#8888aa;
+  --text-muted:    #4a4a6a;
+
+  --success:       #22c55e;
+  --success-glow:  rgba(34,197,94,0.2);
+  --danger:        #e63946;
+  --danger-glow:   rgba(230,57,70,0.2);
+
+  --font-head: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --radius: 14px;
+  --radius-sm: 8px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--red); }
+
+/* ─── Selection ─── */
+::selection { background: var(--red-glow); color: var(--text-primary); }

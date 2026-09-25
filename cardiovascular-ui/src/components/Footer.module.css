@@ -1,0 +1,61 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 24px;
+  background: #07070f;
+}
+
+.inner {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.logoIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px; height: 28px;
+  border-radius: 7px;
+  background: linear-gradient(135deg, var(--red), #a0001a);
+  color: #fff;
+}
+
+.copy {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.heartIcon {
+  color: var(--red);
+  flex-shrink: 0;
+}
+
+.copy a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.copy a:hover { color: var(--red-light); }
+
+.disclaimer {
+  font-size: 0.73rem;
+  color: var(--text-muted);
+  opacity: 0.6;
+}
